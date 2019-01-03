@@ -47,6 +47,10 @@ was a Lock() initially.). Now we are good to go.
     
 And the result is: Door is locked. Backdoor is locked.
 
+The beauty here is you can define your own mechanism of locking and unlocking doors for each locks.
+For example, on our BackDoorLock() class we can simplify things and use it to only lock the door,
+it is all about your fantasy how to implement this pattern.
+
 #### Note:
 It can look like a little weird to use this pattern alone in our case above. But the main issue is
 to know how to use it. In general you don't want to use Command Pattern just for this case. But
