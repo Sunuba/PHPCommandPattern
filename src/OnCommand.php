@@ -9,7 +9,7 @@ class OnCommand implements Command
     private $light;
     public $lightStatus;
 
-    public function __construct(Lock $light)
+    public function __construct(LockInterface $light)
     {
         $this->light = $light;
     }

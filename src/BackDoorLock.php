@@ -4,7 +4,7 @@
 namespace Command;
 
 
-class Lock implements LockInterface
+class BackDoorLock implements LockInterface
 {
     public $isLocked = false;
 
@@ -22,11 +22,11 @@ class Lock implements LockInterface
 
     public function on()
     {
-        echo 'Door is locked. ';
+        echo 'Backdoor is locked. ';
     }
 
     public function off()
     {
-        echo 'Door is unlocked. ';
+        echo 'Backdoor is unlocked. ';
     }
 }
