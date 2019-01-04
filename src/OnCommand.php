@@ -6,16 +6,16 @@ namespace Command;
 
 class OnCommand implements Command
 {
-    private $light;
-    public $lightStatus;
+    private $lock;
+    public $lockStatus;
 
-    public function __construct(LockInterface $light)
+    public function __construct(LockInterface $lock)
     {
-        $this->light = $light;
+        $this->lock = $lock;
     }
 
     public function execute(Command $command)
     {
-        $this->light->toggle();
+        $this->lock->toggle();
     }
 }
